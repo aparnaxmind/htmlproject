@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            body {  
+                    background-image: url("five.jpg");  
+                    margin-left:500px;  
+                } 
+                .sdtb {
+                    border-collapse: collapse;
+                    border-spacing: 25px;
+                    margin: 50px 0;
+                    font-size: 0.9em;
+                    font-family: sans-serif;
+                    min-width: 400px;
+                    box-shadow: 0 0 20px rgba(235, 108, 108, 0.986);
+                } 
+        </style>
+    </head>
+    <body style="text-align: center ;">
+        <form action="action_page.php">
+            <table class="sdtb" >
+                <tr>
+                    <th colspan="2" style="color: red; background-color: rgba(238, 238, 9, 0.692);"><b>User Form</b></th>
+                </tr>
+                <tr>
+                    <th>Enter name</th>
+                    <th><input type="text" name= "name" value="names"></th>
+                </tr><br>
+                <tr>
+                    <th>Enter password</th>
+                    <th><input type="password" name="pasword" value="passwords"></th>
+                </tr><br>
+                <tr>
+                    <th> Enter address</th>
+                    <th><textarea id="add" name="adds" rows="4" ></textarea></th>
+                </tr><br>
+                <tr>
+                    <th>GAMES</th>
+                    <th style="text-align:left ;"><input type="checkbox" id="game" name="Hockey" value="Hockey">Hockey<br>
+                        <input type="checkbox" id="game" name="Football" value="Football">Football<br>
+                        <input type="checkbox" id="game" name="Badminton" value="Badminton">Badminton<br>
+                        <input type="checkbox" id="game" name="Cricket" value="Cricket">Cricket <br>
+                        <input type="checkbox" id="game" name="volleyball" value="volleyball">volleyball<br></th>
+                </tr><br>
+                <tr>
+                    <th>Gender </th>
+                    <th><input type="radio" id="male" name="Gender" value="male">male<input type="radio" id="female" name="Gender" value="female">female</th>
+                </tr>
+                <tr>
+                    <th>Select your age </th>
+                    <th><select name="age" id="age">
+                        <option value="age1">bellow 10</option>
+                        <option value="age2">10-18</option>
+                        <option value="age3">18-60</option>
+                        <option value="age4">above 60</option>
+                    </select></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="button" value="browse...">No file selected.</th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                    <button type="button" onclick="alert('Hello World!')">Click Me</button>
+                    <input type="button" value="reset">
+                    <input type="submit" value="Submit"</th>
+                </tr>
+            </table>>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment6</title>
+    </head>
+    <body background="a6.jpg"style="text-align: center" ;>
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-style: italic; color :rgb(240, 40, 40);">HELLO...</h1>
+        <h2 style="color: blue ; font-style:italic;"> CUTE BABY</h2>
+        <br><br><br><br><br><br><br><br><br>
+        <audio controls autoplay muted>
+            <source src="Muthe Muthe-Kuttyweb.xyz.mp3" type="audio/mpeg">
+        </audio>
+        <h5>song for kids</h5>
+        <br><br><br>
+        
+        <video width="300" height="200" controls autoplay>
+            <source src="C:\Users\aparn\html\VID-20210107-WA0212.mp4" type="video/ogg">
+        </video>
+        <h5> vedeo for babys</h5>
+
+        <canvas id="demoCanvas" width="340" height="340"> canvas</canvas> 
+        <script>
+        var canvas = document.getElementById('demoCanvas');
+        var ctx = canvas.getContext('2d');
+        var x = 90;
+        var y = 100;
+        var radius = 75;
+        var startAngle = 1.1 * Math.PI;
+        var endAngle = 1.9 * Math.PI;
+        var counterClockwise = false;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'yellow';
+        ctx.stroke();
+        </script>
+       
+    </body>
+</html>

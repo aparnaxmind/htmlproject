@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment 11</title>
+        <style>
+            .login {
+              background-color: #4CAF50;
+              border: none;
+              color: white;
+              padding: 10px 60px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            body {  
+                    margin-left:600px;  
+                } 
+            .cls{
+            text-align: center;
+            width:400px;
+            height:250px;
+            background: white; 
+            position: absolute;
+            top:16%;
+            left:35%;
+            border-radius: 20px;
+            }
+            .blur {
+                 filter: blur(10px);
+                }
+                
+        </style>
+
+
+    </head>
+    <body>
+        <div class="cls">
+        <form action="login.php">
+            <h2><b>Login Form</b></h2>
+            <hr>
+            <b>User Name</b><br>
+            <input type="text" name= "name" placeholder="Enter name"><br>
+            <b>Password</b><br>
+            <input type="password" name="pasword" placeholder="Enter password"><br>
+            <input type="button" class="login" value="Login">
+        </form>
+    </div>
+    </body>
+</html>
